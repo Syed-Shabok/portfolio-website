@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --background: #1e0f0e;
+  --on-background: #fadcd9;
+  --surface: #1e0f0e;
+  --on-surface: #fadcd9;
+  --on-surface-variant: #e4beba;
+  --primary: #ffb3ae;
+  --on-primary: #68000b;
+  --primary-container: #ff5352;
+  --on-primary-container: #5c0008;
+  --secondary: #ffb68d;
+  --on-secondary: #532200;
+  --tertiary: #60dac4;
+  --on-tertiary: #003730;
+  --outline: #ab8986;
+  --outline-variant: #5b403e;
+  --surface-container: #2c1b1a;
+  --surface-container-highest: #43302f;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-on-background: var(--on-background);
+  --color-surface: var(--surface);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary-container: var(--on-primary-container);
+  --color-secondary: var(--secondary);
+  --color-on-secondary: var(--on-secondary);
+  --color-tertiary: var(--tertiary);
+  --color-on-tertiary: var(--on-tertiary);
+  --color-outline: var(--outline);
+  --color-outline-variant: var(--outline-variant);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-highest: var(--surface-container-highest);
+
+  --font-h1: "Space Grotesk", sans-serif;
+  --font-h2: "Space Grotesk", sans-serif;
+  --font-h3: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+
+  --spacing-container-max: 1200px;
+  --spacing-section-gap: 120px;
+  --spacing-margin-md: 32px;
+  --spacing-gutter: 24px;
+}
+
+@layer components {
+  .glass-panel {
+    background: rgba(44, 27, 26, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .glow-accent {
+    background: radial-gradient(circle at center, rgba(255, 83, 82, 0.15) 0%, transparent 70%);
+  }
+  .hero-gradient {
+    background: linear-gradient(to bottom, transparent, #1e0f0e);
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+}
+
+.font-space-grotesk {
+  font-family: var(--font-h1);
+}
