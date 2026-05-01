@@ -6,6 +6,7 @@ import ProjectsGrid from '@/components/ProjectsGrid';
 import Education from '@/components/Education';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import GSAPReveal from '@/components/GSAPReveal';
 
 export default function Home() {
   return (
@@ -13,11 +14,11 @@ export default function Home() {
       <Navbar />
       <main className="pt-20">
         <Hero />
-        <About />
-        <Skills />
-        <ProjectsGrid />
-        <Education />
-        <Contact />
+        <GSAPReveal><About /></GSAPReveal>
+        <GSAPReveal><Skills /></GSAPReveal>
+        <GSAPReveal><ProjectsGrid /></GSAPReveal>
+        <GSAPReveal><Education /></GSAPReveal>
+        <GSAPReveal><Contact /></GSAPReveal>
       </main>
       <Footer />
     </>
