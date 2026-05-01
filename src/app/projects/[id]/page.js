@@ -15,18 +15,18 @@ export default async function ProjectPage({ params }) {
   return (
     <>
       <Navbar />
-      <main className="pt-20">
+      <main className="pt-40">
         {/* Hero Section */}
-        <section className="relative w-full h-[716px] flex flex-col justify-end overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img 
-              className="w-full h-full object-cover" 
-              src={project.heroImage} 
-              alt={project.title} 
+        <section className="relative w-full  flex flex-col justify-end overflow-hidden">
+          {/* <div className="absolute inset-0 z-0">
+            <img
+              className="w-full h-full object-cover"
+              src={project.heroImage}
+              alt={project.title}
             />
             <div className="absolute inset-0 hero-gradient"></div>
-          </div>
-          <div className="relative z-10 max-w-7xl mx-auto px-8 pb-12 w-full">
+          </div> */}
+          <div className="relative z-10 max-w-7xl mx-auto px-8 w-full">
             <div className="flex items-center gap-2 mb-4">
               <Link className="flex items-center gap-2 text-primary font-label-sm hover:translate-x-[-4px] transition-transform" href="/#projects">
                 <span className="material-symbols-outlined text-sm">arrow_back</span>
@@ -45,7 +45,7 @@ export default async function ProjectPage({ params }) {
         </section>
 
         {/* Content Grid */}
-        <section className="max-w-7xl mx-auto px-8 py-section-gap">
+        <section className="max-w-7xl mx-auto px-8 py-20">
           <div className="grid grid-cols-12 gap-gutter">
             {/* Left Column: Description & Media */}
             <div className="col-span-12 lg:col-span-8 flex flex-col gap-12">
@@ -123,7 +123,7 @@ export default async function ProjectPage({ params }) {
                 </div>
               )}
 
-              <div className="bg-surface-container p-margin-md rounded-xl border border-outline-variant relative overflow-hidden">
+              {/* <div className="bg-surface-container p-margin-md rounded-xl border border-outline-variant relative overflow-hidden">
                 <div className="absolute -right-4 -bottom-4 opacity-5">
                   <span className="material-symbols-outlined text-[120px]">terminal</span>
                 </div>
@@ -146,13 +146,13 @@ export default async function ProjectPage({ params }) {
                     <p className="text-h3 text-primary font-bold text-2xl">{project.stats.stars}</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
 
         {/* Bottom Action CTA */}
-        <section className="max-w-7xl mx-auto px-8 pb-section-gap">
+        {/* <section className="max-w-7xl mx-auto px-8 pb-section-gap">
           <div className="glass-panel p-12 rounded-xl flex flex-col md:flex-row items-center justify-between gap-8 border-dashed border-2 border-primary/20">
             <div>
               <h2 className="font-h3 text-3xl text-white mb-2">Interested in this project?</h2>
@@ -162,7 +162,7 @@ export default async function ProjectPage({ params }) {
               Get In Touch
             </button>
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </>

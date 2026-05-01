@@ -35,18 +35,21 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto pb-20 px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div ref={textRef}>
-          <h1 className="hero-title font-h1 text-6xl md:text-8xl text-white mb-6 leading-tight">
-            Crafting <span className="text-primary">Next-Gen</span> Digital Experiences
+          <h1 className="hero-title font-h1 text-4xl md:text-5xl text-white mb-6 leading-tight">
+            Hi, I'm <span className="text-primary">Shabok</span> <br />
+            Building Smart & Creative Digital Experiences
           </h1>
-          <p className="hero-desc font-body-lg text-on-surface-variant text-xl max-w-2xl mb-12 leading-relaxed">
-            Full-stack developer specializing in high-performance architectures, distributed systems, and premium UI/UX design.
+          <p className="hero-desc font-body-lg text-on-surface-variant text-md md:text-xl max-w-2xl mb-12 leading-relaxed">
+            I’m a passionate developer focused on web development.
+            I enjoy solving problems, building interactive applications, and continuously
+            improving my skills through real-world projects.
           </p>
-          <div className="hero-btns flex flex-wrap gap-4">
+          <div className="hero-btns flex flex-wrap gap-4 mb-8 lg:mb-0">
             <motion.a
               href="#projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-primary/20"
+              className="bg-primary-container text-on-primary-container px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-sm md:text-lg shadow-lg shadow-primary/20"
             >
               View Projects
             </motion.a>
@@ -54,7 +57,7 @@ export default function Hero() {
               href="#contact"
               whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
               whileTap={{ scale: 0.95 }}
-              className="border border-outline px-8 py-4 rounded-full font-bold text-lg text-white transition-all"
+              className="border border-outline px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-sm md:text-lg text-white transition-all"
             >
               Get In Touch
             </motion.a>
@@ -62,8 +65,8 @@ export default function Hero() {
         </div>
 
         {/* Right Content: Profile Image */}
-        <div className="hero-image-container flex justify-center lg:justify-end relative">
-          <div className="relative w-70 h-70 md:w-[500px] md:h-[500px]">
+        <div className="hero-image-container flex justify-center lg:justify-end relative mt-10 lg:mt-0">
+          <div className="relative w-70 h-70 md:w-[450px] md:h-[450px]">
             {/* Glow effect background */}
             <div className="absolute inset-0 bg-primary/20 rounded-full blur-[80px] animate-pulse"></div>
             <div className="absolute inset-0 border-2 border-primary/30 rounded-full scale-110"></div>

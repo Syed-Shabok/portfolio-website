@@ -4,7 +4,7 @@ export default function Contact() {
       <div className="glass-panel p-12 rounded-2xl glow-accent border-dashed border-2 border-primary/20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-h2 text-5xl text-white mb-6">Let's build something <span className="text-primary">extraordinary</span>.</h2>
+            <h2 className="font-h2 text-3xl md:text-5xl text-white mb-6">Let's build something <span className="text-primary">extraordinary</span>.</h2>
             <p className="text-on-surface-variant text-lg mb-8">
               Available for freelance collaborations and architectural consulting. Currently seeking opportunities in high-performance computing and Web3.
             </p>

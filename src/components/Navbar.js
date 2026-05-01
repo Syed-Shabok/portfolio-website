@@ -21,13 +21,13 @@ export default function Navbar() {
         <Link href="/" className="text-2xl font-bold text-white tracking-tighter">
           DevPortfolio
         </Link>
-        
+
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
-            <Link 
+            <Link
               key={link.name}
-              className="text-zinc-400 font-medium hover:text-red-400 transition-colors duration-200" 
+              className="text-zinc-400 font-medium hover:text-red-400 transition-colors duration-200"
               href={link.href}
             >
               {link.name}
@@ -35,8 +35,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:block">
-          <motion.button 
+        <div className="hidden lg:block">
+          <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold shadow-lg shadow-primary/10"
@@ -46,8 +46,8 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Burger */}
-        <button 
-          className="md:hidden text-white"
+        <button
+          className="lg:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
           <span className="material-symbols-outlined">
@@ -63,11 +63,11 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-zinc-950 border-b border-white/10 overflow-hidden"
+            className="lg:hiddenborder-b border-white/10 overflow-hidden"
           >
-            <div className="flex flex-col gap-4 p-8">
+            <div className="flex flex-col gap-4 p-8 items-end">
               {navLinks.map((link) => (
-                <Link 
+                <Link
                   key={link.name}
                   href={link.href}
                   className="text-xl text-zinc-400 hover:text-red-400 transition-colors"
@@ -76,7 +76,7 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <button className="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-bold mt-4">
+              <button className="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-bold mt-4 w-fit">
                 Download Resume
               </button>
             </div>
