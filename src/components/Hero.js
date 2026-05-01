@@ -35,8 +35,8 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto pb-20 px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div ref={textRef}>
-          <h1 className="hero-title font-h1 text-4xl md:text-5xl text-white mb-6 leading-tight">
-            Hi, I'm <span className="text-primary">Shabok</span> <br />
+          <h1 className="hero-title font-h1 text-3xl md:text-5xl text-white mb-6 leading-tight">
+            Hi, I'm <span className="text-primary">Syed Shabok</span> <br />
             Building Smart & Creative Digital Experiences
           </h1>
           <p className="hero-desc font-body-lg text-on-surface-variant text-md md:text-xl max-w-2xl mb-12 leading-relaxed">

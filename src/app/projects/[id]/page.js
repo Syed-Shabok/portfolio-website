@@ -15,17 +15,17 @@ export default async function ProjectPage({ params }) {
   return (
     <>
       <Navbar />
-      <main className="pt-40">
+      <main className="">
         {/* Hero Section */}
-        <section className="relative w-full  flex flex-col justify-end overflow-hidden">
-          {/* <div className="absolute inset-0 z-0">
+        <section className="relative h-[716px] w-full  flex flex-col justify-end overflow-hidden">
+          <div className="absolute inset-0 z-0">
             <img
               className="w-full h-full object-cover"
               src={project.heroImage}
               alt={project.title}
             />
             <div className="absolute inset-0 hero-gradient"></div>
-          </div> */}
+          </div>
           <div className="relative z-10 max-w-7xl mx-auto px-8 w-full">
             <div className="flex items-center gap-2 mb-4">
               <Link className="flex items-center gap-2 text-primary font-label-sm hover:translate-x-[-4px] transition-transform" href="/#projects">
@@ -58,7 +58,7 @@ export default async function ProjectPage({ params }) {
                   {project.fullDescription}
                 </p>
               </div>
-
+              {/* Screenshots */}
               {project.gallery && project.gallery.length > 0 && (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
                   {project.gallery.map((img, idx) => (

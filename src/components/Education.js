@@ -1,21 +1,14 @@
 export default function Education() {
   const education = [
     {
-      degree: "M.S. in Computer Science",
-      school: "Stanford University",
-      period: "2018 - 2020",
-      description: "Specialized in Distributed Systems and Cryptography."
-    },
-    {
-      degree: "B.S. in Software Engineering",
-      school: "MIT",
-      period: "2014 - 2018",
-      description: "Dean's List for 4 consecutive years. Focus on Algorithmic Efficiency."
+      degree: "M.Sc in Computer Science and Engineering",
+      school: "Independent University Bangladesh",
+      description: "Dean's List for 2 consecutive years. Minor in Big Data."
     }
   ];
 
   return (
-    <section id="education" className="max-w-7xl mx-auto px-8 py-section-gap">
+    <section id="education" className="max-w-7xl mx-auto px-8 pb-25">
       <div className="flex items-center gap-4 mb-12">
         <h2 className="font-h2 text-4xl text-white">Education</h2>
         <div className="h-[1px] flex-1 bg-outline-variant"></div>

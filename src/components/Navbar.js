@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
+import logo from '@/assets/logo.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +21,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-zinc-950/60 backdrop-blur-xl border-b border-white/10 shadow-[0_0_20px_rgba(255,77,77,0.1)] font-space-grotesk">
       <div className="flex justify-between items-center px-8 h-20 max-w-7xl mx-auto">
         <Link href="/" className="text-2xl font-bold text-white tracking-tighter">
-          DevPortfolio
+          <Image src={logo} alt="Logo" width={35} height={35} />
         </Link>
 
         {/* Desktop Menu */}
@@ -60,25 +62,33 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hiddenborder-b border-white/10 overflow-hidden"
+            initial={{ opacity: 0, y: -10, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -10, scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+            className="lg:hidden absolute right-0 top-20 z-50"
           >
-            <div className="flex flex-col gap-4 p-8 items-end">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="text-xl text-zinc-400 hover:text-red-400 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
-              <button className="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-bold mt-4 w-fit">
-                Download Resume
-              </button>
+            <div className="w-64 bg-zinc-950/70 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-6">
+
+              <div className="flex flex-col gap-4 items-end mr-3">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    onClick={() => setIsOpen(false)}
+                    className="text-zinc-300 hover:text-red-400 transition-colors text-sm md:text-lg font-medium"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+
+              <div className="mt-6 border-t border-white/10 pt-4">
+                <button className="w-full bg-primary-container text-on-primary-container py-2 rounded-full font-semibold hover:scale-[1.03] transition">
+                  Download Resume
+                </button>
+              </div>
+
             </div>
           </motion.div>
         )}

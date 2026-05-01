@@ -36,7 +36,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-6 pt-4 items-center justify-center md:justify-start">
             <div className="text-center md:text-left">
               <h4 className="text-white font-bold mb-1">Location</h4>
-              <p className="text-on-surface-variant">Dhaka, Bangladesh</p>
+              <p className="text-on-surface-variant"> Dhaka, Bangladesh</p>
             </div>
             {/* Socials  */}
             <div className="flex flex-wrap gap-4 pt-4">
