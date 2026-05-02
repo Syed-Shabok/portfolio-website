@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { projects } from '@/data/projects';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ProjectGallery from '@/components/ProjectGallery';
 
 export default async function ProjectPage({ params }) {
   const { id } = await params;
@@ -15,9 +16,9 @@ export default async function ProjectPage({ params }) {
   return (
     <>
       <Navbar />
-      <main className="">
+      <main className="pt-10 md:pt-0 ">
         {/* Hero Section */}
-        <section className="relative h-[716px] w-full  flex flex-col justify-end overflow-hidden">
+        <section className="relative h-[586px] md:h-[716px] w-full  flex flex-col justify-end overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
               className="w-full h-full object-cover"
@@ -33,8 +34,8 @@ export default async function ProjectPage({ params }) {
                 <span>Back to Projects</span>
               </Link>
             </div>
-            <h1 className="font-h1 text-6xl text-white mb-6">{project.title}</h1>
-            <div className="flex flex-wrap gap-3">
+            <h1 className="font-h1 text-4xl sm:text-5xl md:text-6xl text-white mb-6">{project.title}</h1>
+            <div className="flex flex-wrap gap-3 pb-10">
               {project.tags.map(tag => (
                 <span key={tag} className="bg-surface-container-highest border border-outline-variant px-4 py-1 rounded-full text-label-sm text-secondary">
                   {tag}
@@ -59,15 +60,7 @@ export default async function ProjectPage({ params }) {
                 </p>
               </div>
               {/* Screenshots */}
-              {project.gallery && project.gallery.length > 0 && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-                  {project.gallery.map((img, idx) => (
-                    <div key={idx} className="glass-panel rounded-xl overflow-hidden aspect-video">
-                      <img className="w-full h-full object-cover" src={img} alt={`Gallery image ${idx + 1}`} />
-                    </div>
-                  ))}
-                </div>
-              )}
+              <ProjectGallery images={project.gallery} />
 
               {project.challenges && project.challenges.length > 0 && (
                 <div className="space-y-8">
