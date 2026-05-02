@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Syed Shabok — Developer Portfolio
 
-## Getting Started
+Personal portfolio designed to showcase creative work and technical expertise. Built with a focus on sophisticated aesthetics, smooth interactions, and an exceptional user experience.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🌐 Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Project-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://syed-shabok-portfolio-website.vercel.app/)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
+### ✨ Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*   **🎭 Premium Animations**  
+    High-end visual effects and transitions powered by GSAP and Framer Motion, creating a dynamic and engaging interface.
 
-## Learn More
+*   **🌊 Fluid Scrolling Experience**  
+    Seamless and professional smooth scrolling integrated via Lenis, ensuring consistent performance and a polished feel across all devices.
 
-To learn more about Next.js, take a look at the following resources:
+*   **🖼️ Interactive Project Showcase**  
+    A curated project gallery featuring a custom fullscreen image lightbox modal for an immersive and detailed viewing experience.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🛠️ Technologies Used
 
-## Deploy on Vercel
+*   **Framework:** Next.js (App Router)
+*   **Styling:** Tailwind CSS
+*   **Animations:** GSAP (GreenSock Animation Platform)
+*   **Motion:** Framer Motion
+*   **Smooth Scroll:** Lenis
+*   **Icons:** React Icons
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
