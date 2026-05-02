@@ -29,15 +29,15 @@ export default async function ProjectPage({ params }) {
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-8 w-full">
             <div className="flex items-center gap-2 mb-4">
-              <Link className="flex items-center gap-2 text-primary font-label-sm hover:translate-x-[-4px] transition-transform" href="/#projects">
+              <Link className="flex items-center gap-2 text-orange-500 font-semibold font-label-sm hover:translate-x-[-4px] transition-transform" href="/#projects">
                 <span className="material-symbols-outlined text-sm">arrow_back</span>
                 <span>Back to Projects</span>
               </Link>
             </div>
-            <h1 className="font-h1 text-4xl sm:text-5xl md:text-6xl text-white mb-6">{project.title}</h1>
+            <h1 className="font-h1 text-3xl  md:text-6xl font-semibold md:font-normal text-white mb-6">{project.title}</h1>
             <div className="flex flex-wrap gap-3 pb-10">
               {project.tags.map(tag => (
-                <span key={tag} className="bg-surface-container-highest border border-outline-variant px-4 py-1 rounded-full text-label-sm text-secondary">
+                <span key={tag} className="bg-surface-container-highest border border-outline-variant px-4 py-1 rounded-full text-label-sm text-secondary text-xs md:text-base">
                   {tag}
                 </span>
               ))}
@@ -51,8 +51,8 @@ export default async function ProjectPage({ params }) {
             {/* Left Column: Description & Media */}
             <div className="col-span-12 lg:col-span-8 flex flex-col gap-12">
               <div className="glass-panel p-margin-md rounded-xl">
-                <h2 className="font-h2 text-4xl text-white mb-6">Project Overview</h2>
-                <p className="font-body-lg text-on-surface-variant mb-8 text-xl">
+                <h2 className="font-h2 text-2xl  md:text-4xl text-white mb-6">Project Overview</h2>
+                <p className="font-body-lg text-on-surface-variant mb-8 text-md md:text-xl">
                   {project.description}
                 </p>
                 <p className="font-body-lg text-on-surface-variant">
@@ -66,13 +66,13 @@ export default async function ProjectPage({ params }) {
                 <div className="space-y-8">
                   <div className="flex items-center gap-4">
                     <div className="w-8 h-[2px] bg-primary"></div>
-                    <h3 className="font-h3 text-3xl text-white">Challenges Faced</h3>
+                    <h3 className="font-h3 text-2xl md:text-3xl text-white">Challenges Faced</h3>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {project.challenges.map((challenge, idx) => (
                       <div key={idx} className="glass-panel p-margin-md rounded-xl border-l-4 border-l-primary">
                         <h4 className="text-white font-bold mb-2">{challenge.title}</h4>
-                        <p className="text-on-surface-variant text-body-md">{challenge.description}</p>
+                        <p className="text-on-surface-variant text-sm md:text-base text-body-md">{challenge.description}</p>
                       </div>
                     ))}
                   </div>
@@ -109,7 +109,7 @@ export default async function ProjectPage({ params }) {
                     {project.future.map((item, idx) => (
                       <li key={idx} className="flex gap-4">
                         <span className="material-symbols-outlined text-tertiary text-sm mt-1">check_circle</span>
-                        <span className="text-on-surface-variant text-body-md">{item}</span>
+                        <span className="text-on-surface-variant text-sm md:text-base text-body-md">{item}</span>
                       </li>
                     ))}
                   </ul>

@@ -10,12 +10,12 @@ export default function Contact() {
               Let’s build something <span className="text-primary">impactful</span>.
             </h2>
 
-            <p className="text-on-surface-variant text-lg mb-8">
+            <p className="text-on-surface-variant text-md md:text-lg mb-8">
               I’m currently open to opportunities in <span className="text-white">full-stack web development</span>.
               I enjoy building scalable, high-performance applications and modern user experiences using React, Node.js, and related technologies.
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-4 text-sm md:text-base">
               <div className="flex items-center gap-4 text-white">
                 <span className="material-symbols-outlined text-primary">mail</span>
                 <span>syed.shabok@gmail.com</span>
@@ -39,28 +39,28 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="bg-surface-container border border-outline-variant p-4 rounded-xl text-white focus:outline-none focus:border-primary transition-colors"
+                className="bg-surface-container border border-outline-variant p-4 rounded-xl text-white focus:outline-none focus:border-primary transition-colors text-xs md:text-base"
               />
               <input
                 type="email"
                 placeholder="Your Email"
-                className="bg-surface-container border border-outline-variant p-4 rounded-xl text-white focus:outline-none focus:border-primary transition-colors"
+                className="bg-surface-container border border-outline-variant p-4 rounded-xl text-white focus:outline-none focus:border-primary transition-colors text-xs md:text-base"
               />
             </div>
 
             <input
               type="text"
               placeholder="Project Subject"
-              className="w-full bg-surface-container border border-outline-variant p-4 rounded-xl text-white focus:outline-none focus:border-primary transition-colors"
+              className="w-full bg-surface-container border border-outline-variant p-4 rounded-xl text-white focus:outline-none focus:border-primary transition-colors text-xs md:text-base"
             />
 
             <textarea
               placeholder="Tell me about your project, idea, or opportunity..."
               rows="5"
-              className="w-full bg-surface-container border border-outline-variant p-4 rounded-xl text-white focus:outline-none focus:border-primary transition-colors"
+              className="w-full bg-surface-container border border-outline-variant p-4 rounded-xl text-white focus:outline-none focus:border-primary transition-colors text-xs md:text-base"
             ></textarea>
 
-            <button className="w-full bg-primary-container text-on-primary-container py-4 rounded-xl font-bold text-lg hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-primary/20">
+            <button className="w-full bg-primary-container text-on-primary-container py-4 rounded-xl font-bold text-lg hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-primary/20 cursor-pointer text-sm md:text-lg">
               Send Message
             </button>
           </form>
