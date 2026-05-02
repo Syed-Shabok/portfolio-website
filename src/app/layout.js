@@ -13,8 +13,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "DevPortfolio | Modern Developer Showcase",
-  description: "A premium developer portfolio showcasing high-performance projects and technical expertise.",
+  title: "Syed Shabok | Full Stack Developer",
+  description: "PortFolio of Syed Shabok | Full Stack Developer",
 };
 
 export default function RootLayout({ children }) {
